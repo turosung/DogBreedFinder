@@ -11,28 +11,37 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     @IBOutlet weak var dogTableView: UITableView!
     
+    private let viewModel = BreedViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         dogTableView.dataSource = self
         dogTableView.delegate = self
         
-        let breedManager = BreedManager()
-        breedManager.getDogBreeds()
+        viewModel.dogDelegate = self
+        viewModel.fetchDogs(url: dogAPIURL)
         
+        self.navigationItem.title = "Breeds"
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = dogTableView.dequeueReusableCell(withIdentifier: "BreedCell", for: indexPath)
+        cell.textLabel?.text = viewModel.dogs?.message[indexPath.row]
         return cell
     }
+}
+    
+extension ViewController: DogServices {
+    func reloadData() {
+        self.dogTableView.reloadData()
+    }
+}
     
 
-
-}
 

@@ -8,13 +8,8 @@
 import Foundation
 
 struct BreedModel: Decodable {
-    let message: [String]?
+    let message: [String]
 }
 
-//struct Breeds: Decodable {
-//    let affenpinscher: String?
-//    let beagle: String?
-//    let boxer: String?
-//}
 
 

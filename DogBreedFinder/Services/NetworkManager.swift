@@ -10,6 +10,7 @@ import Foundation
 enum APIErrors: Error {
     case invalidUrl
 }
+
 func loadData(url: String) async throws -> Data {
     guard let url = URL(string: url) else {
         throw APIErrors.invalidUrl
