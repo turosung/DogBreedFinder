@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DogListViewController.swift
 //  DogBreedFinder
 //
 //  Created by Nuhu Sulemana on 18/02/2024.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DogListViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var dogTableView: UITableView!
     
@@ -16,18 +16,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationItem.title = "Breeds"
+        
         dogTableView.dataSource = self
         dogTableView.delegate = self
         
         viewModel.dogDelegate = self
         viewModel.fetchDogs(url: dogAPIURL)
-        
-        self.navigationItem.title = "Breeds"
     }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return viewModel.dogs?.message.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -37,7 +37,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 }
     
-extension ViewController: DogServices {
+extension DogListViewController: DogServices {
     func reloadData() {
         self.dogTableView.reloadData()
     }

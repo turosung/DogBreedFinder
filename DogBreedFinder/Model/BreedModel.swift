@@ -2,14 +2,11 @@
 //  BreedModel.swift
 //  DogBreedFinder
 //
-//  Created by Nuhu Sulemana on 18/02/2024.
+//  Created by Nuhu Sulemana on 21/02/2024.
 //
 
 import Foundation
 
-struct BreedModel: Decodable {
-    let message: [String]
+struct Breed: Decodable {
+    let img: String
 }
-
-
-

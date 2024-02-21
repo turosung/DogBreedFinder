@@ -9,31 +9,33 @@
 /* Begin PBXBuildFile section */
 		A82C88A82B825309009D9C95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88A72B825309009D9C95 /* AppDelegate.swift */; };
 		A82C88AA2B825309009D9C95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88A92B825309009D9C95 /* SceneDelegate.swift */; };
-		A82C88AC2B825309009D9C95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88AB2B825309009D9C95 /* ViewController.swift */; };
+		A82C88AC2B825309009D9C95 /* DogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88AB2B825309009D9C95 /* DogListViewController.swift */; };
 		A82C88AF2B825309009D9C95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82C88AD2B825309009D9C95 /* Main.storyboard */; };
 		A82C88B12B82530A009D9C95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A82C88B02B82530A009D9C95 /* Assets.xcassets */; };
 		A82C88B42B82530A009D9C95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82C88B22B82530A009D9C95 /* LaunchScreen.storyboard */; };
-		A82C88BD2B82564C009D9C95 /* BreedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88BC2B82564C009D9C95 /* BreedModel.swift */; };
+		A82C88BD2B82564C009D9C95 /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88BC2B82564C009D9C95 /* DogModel.swift */; };
 		A82C88C12B827BCC009D9C95 /* DogAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88C02B827BCC009D9C95 /* DogAPIManager.swift */; };
 		A82C88C42B828E70009D9C95 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88C32B828E70009D9C95 /* NetworkManager.swift */; };
 		A82C88C72B84DB2D009D9C95 /* BreedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88C62B84DB2D009D9C95 /* BreedViewModel.swift */; };
 		A82C88CA2B84E06A009D9C95 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88C92B84E06A009D9C95 /* Constant.swift */; };
+		A82C88CE2B858CB9009D9C95 /* BreedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88CD2B858CB9009D9C95 /* BreedModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A82C88A42B825309009D9C95 /* DogBreedFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogBreedFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A82C88A72B825309009D9C95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A82C88A92B825309009D9C95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A82C88AB2B825309009D9C95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A82C88AB2B825309009D9C95 /* DogListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogListViewController.swift; sourceTree = "<group>"; };
 		A82C88AE2B825309009D9C95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A82C88B02B82530A009D9C95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A82C88B32B82530A009D9C95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A82C88B52B82530A009D9C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A82C88BC2B82564C009D9C95 /* BreedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedModel.swift; sourceTree = "<group>"; };
+		A82C88BC2B82564C009D9C95 /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
 		A82C88C02B827BCC009D9C95 /* DogAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPIManager.swift; sourceTree = "<group>"; };
 		A82C88C32B828E70009D9C95 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A82C88C62B84DB2D009D9C95 /* BreedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedViewModel.swift; sourceTree = "<group>"; };
 		A82C88C92B84E06A009D9C95 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		A82C88CD2B858CB9009D9C95 /* BreedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +77,6 @@
 				A82C88A72B825309009D9C95 /* AppDelegate.swift */,
 				A82C88A92B825309009D9C95 /* SceneDelegate.swift */,
 				A82C88B02B82530A009D9C95 /* Assets.xcassets */,
-				A82C88B22B82530A009D9C95 /* LaunchScreen.storyboard */,
 				A82C88B52B82530A009D9C95 /* Info.plist */,
 			);
 			path = DogBreedFinder;
@@ -84,7 +85,8 @@
 		A82C88BB2B825633009D9C95 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A82C88BC2B82564C009D9C95 /* BreedModel.swift */,
+				A82C88BC2B82564C009D9C95 /* DogModel.swift */,
+				A82C88CD2B858CB9009D9C95 /* BreedModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -92,7 +94,7 @@
 		A82C88BE2B827247009D9C95 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				A82C88AB2B825309009D9C95 /* ViewController.swift */,
+				A82C88AB2B825309009D9C95 /* DogListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				A82C88AD2B825309009D9C95 /* Main.storyboard */,
+				A82C88B22B82530A009D9C95 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -202,11 +205,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A82C88C42B828E70009D9C95 /* NetworkManager.swift in Sources */,
-				A82C88AC2B825309009D9C95 /* ViewController.swift in Sources */,
+				A82C88AC2B825309009D9C95 /* DogListViewController.swift in Sources */,
 				A82C88C72B84DB2D009D9C95 /* BreedViewModel.swift in Sources */,
+				A82C88CE2B858CB9009D9C95 /* BreedModel.swift in Sources */,
 				A82C88CA2B84E06A009D9C95 /* Constant.swift in Sources */,
 				A82C88C12B827BCC009D9C95 /* DogAPIManager.swift in Sources */,
-				A82C88BD2B82564C009D9C95 /* BreedModel.swift in Sources */,
+				A82C88BD2B82564C009D9C95 /* DogModel.swift in Sources */,
 				A82C88A82B825309009D9C95 /* AppDelegate.swift in Sources */,
 				A82C88AA2B825309009D9C95 /* SceneDelegate.swift in Sources */,
 			);

@@ -16,17 +16,16 @@ class BreedViewModel {
     private let dogManager = DogAPIManager()
     weak var dogDelegate: DogServices?
     
-    var dogs: BreedModel? {
+    var dogs: DogModel? {
         didSet {
             self.dogDelegate?.reloadData()
         }
     }
     
-    
     @MainActor func fetchDogs(url: String) {
         Task {
             do {
-                let dogResponse: BreedModel = try await dogManager.getDogBreeds(url: dogAPIURL)
+                let dogResponse: DogModel = try await dogManager.getDogBreeds(url: dogAPIURL)
                 print(dogResponse)
                 self.dogs = dogResponse
             } catch {

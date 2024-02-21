@@ -15,7 +15,7 @@ enum APIError: Error {
 
 class DogAPIManager {
     
-    func getDogBreeds(url: String) async throws -> BreedModel {
+    func getDogBreeds(url: String) async throws -> DogModel {
         print(dogAPIURL)
         guard let url = URL(string: dogAPIURL) else {
             throw APIError.invalidURL
@@ -31,7 +31,7 @@ class DogAPIManager {
         
         do {
             let decoder = JSONDecoder()
-            let decodedData = try decoder.decode(BreedModel.self, from: data)
+            let decodedData = try decoder.decode(DogModel.self, from: data)
             print(decodedData)
             return decodedData
         } catch {
