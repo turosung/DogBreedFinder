@@ -16,28 +16,45 @@ enum APIError: Error {
 class DogAPIManager {
     
     func getDogBreeds(url: String) async throws -> DogModel {
-        print(dogAPIURL)
-        guard let url = URL(string: dogAPIURL) else {
+        guard let url = URL(string: breedListURL) else {
             throw APIError.invalidURL
         }
         
         let (data, response) = try await URLSession.shared.data(from: url)
-        print(data)
-        
-        guard let response = response as? HTTPURLResponse, 
-                  response.statusCode == 200 else {
+        guard let response = response as? HTTPURLResponse,
+              response.statusCode == 200 else {
             throw APIError.invalidResponse
         }
         
         do {
             let decoder = JSONDecoder()
             let decodedData = try decoder.decode(DogModel.self, from: data)
-            print(decodedData)
             return decodedData
         } catch {
             throw APIError.invalidURL
         }
     }
+    
+    func getDogBreedsImages(url: String) async throws -> Breed {
+        guard let url = URL(string: url) else {
+            throw APIError.invalidURL
+        }
+        
+        let (data, response) = try await URLSession.shared.data(from: url)
+        guard let response = response as? HTTPURLResponse,
+              response.statusCode == 200 else {
+            throw APIError.invalidResponse
+        }
+        
+        do {
+            let decoder = JSONDecoder()
+            let decodedData = try decoder.decode(Breed.self, from: data)
+            return decodedData
+        } catch {
+            throw APIError.invalidURL
+        }
+    }
+    
 }
 
 

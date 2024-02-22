@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93A64BEACEACEC00BA3AE286 /* Pods_DogBreedFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6004D6A9C303D01A1A707C42 /* Pods_DogBreedFinder.framework */; };
 		A82C88A82B825309009D9C95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88A72B825309009D9C95 /* AppDelegate.swift */; };
 		A82C88AA2B825309009D9C95 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88A92B825309009D9C95 /* SceneDelegate.swift */; };
 		A82C88AC2B825309009D9C95 /* DogListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88AB2B825309009D9C95 /* DogListViewController.swift */; };
@@ -15,13 +16,19 @@
 		A82C88B42B82530A009D9C95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82C88B22B82530A009D9C95 /* LaunchScreen.storyboard */; };
 		A82C88BD2B82564C009D9C95 /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88BC2B82564C009D9C95 /* DogModel.swift */; };
 		A82C88C12B827BCC009D9C95 /* DogAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88C02B827BCC009D9C95 /* DogAPIManager.swift */; };
-		A82C88C42B828E70009D9C95 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88C32B828E70009D9C95 /* NetworkManager.swift */; };
 		A82C88C72B84DB2D009D9C95 /* BreedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88C62B84DB2D009D9C95 /* BreedViewModel.swift */; };
 		A82C88CA2B84E06A009D9C95 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88C92B84E06A009D9C95 /* Constant.swift */; };
 		A82C88CE2B858CB9009D9C95 /* BreedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82C88CD2B858CB9009D9C95 /* BreedModel.swift */; };
+		FC073F082B861FDE0054CD8F /* BreedDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC073F072B861FDE0054CD8F /* BreedDetailsViewController.swift */; };
+		FC073F102B86214C0054CD8F /* BreedDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC073F0E2B86214C0054CD8F /* BreedDetailsCollectionViewCell.swift */; };
+		FC073F112B86214C0054CD8F /* BreedDetailsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC073F0F2B86214C0054CD8F /* BreedDetailsCollectionViewCell.xib */; };
+		FC073F162B86260F0054CD8F /* BreedDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC073F152B86260F0054CD8F /* BreedDetailsViewModel.swift */; };
+		FC073F182B8634EF0054CD8F /* ImagePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC073F172B8634EF0054CD8F /* ImagePopupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		321A5C97509217BC758500CA /* Pods-DogBreedFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogBreedFinder.release.xcconfig"; path = "Target Support Files/Pods-DogBreedFinder/Pods-DogBreedFinder.release.xcconfig"; sourceTree = "<group>"; };
+		6004D6A9C303D01A1A707C42 /* Pods_DogBreedFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DogBreedFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A82C88A42B825309009D9C95 /* DogBreedFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DogBreedFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A82C88A72B825309009D9C95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A82C88A92B825309009D9C95 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,10 +39,16 @@
 		A82C88B52B82530A009D9C95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A82C88BC2B82564C009D9C95 /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
 		A82C88C02B827BCC009D9C95 /* DogAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogAPIManager.swift; sourceTree = "<group>"; };
-		A82C88C32B828E70009D9C95 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A82C88C62B84DB2D009D9C95 /* BreedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedViewModel.swift; sourceTree = "<group>"; };
 		A82C88C92B84E06A009D9C95 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		A82C88CD2B858CB9009D9C95 /* BreedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedModel.swift; sourceTree = "<group>"; };
+		A885434B2B8734720033B675 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F8656E0489A0C58AEE080509 /* Pods-DogBreedFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DogBreedFinder.debug.xcconfig"; path = "Target Support Files/Pods-DogBreedFinder/Pods-DogBreedFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		FC073F072B861FDE0054CD8F /* BreedDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailsViewController.swift; sourceTree = "<group>"; };
+		FC073F0E2B86214C0054CD8F /* BreedDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		FC073F0F2B86214C0054CD8F /* BreedDetailsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreedDetailsCollectionViewCell.xib; sourceTree = "<group>"; };
+		FC073F152B86260F0054CD8F /* BreedDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedDetailsViewModel.swift; sourceTree = "<group>"; };
+		FC073F172B8634EF0054CD8F /* ImagePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePopupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,17 +56,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93A64BEACEACEC00BA3AE286 /* Pods_DogBreedFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2953F30711212E87594EF517 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F8656E0489A0C58AEE080509 /* Pods-DogBreedFinder.debug.xcconfig */,
+				321A5C97509217BC758500CA /* Pods-DogBreedFinder.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4D475C235A36F502C800C8A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6004D6A9C303D01A1A707C42 /* Pods_DogBreedFinder.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A82C889B2B825309009D9C95 = {
 			isa = PBXGroup;
 			children = (
+				A885434B2B8734720033B675 /* README.md */,
 				A82C88A62B825309009D9C95 /* DogBreedFinder */,
 				A82C88A52B825309009D9C95 /* Products */,
+				2953F30711212E87594EF517 /* Pods */,
+				4D475C235A36F502C800C8A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,15 +102,16 @@
 		A82C88A62B825309009D9C95 /* DogBreedFinder */ = {
 			isa = PBXGroup;
 			children = (
+				FC073F092B8620F60054CD8F /* Cell */,
 				A82C88C82B84E05A009D9C95 /* Constant */,
 				A82C88C22B828E40009D9C95 /* Services */,
 				A82C88BB2B825633009D9C95 /* Model */,
 				A82C88BE2B827247009D9C95 /* ViewControllers */,
 				A82C88BF2B827253009D9C95 /* ViewModel */,
 				A82C88C52B84D454009D9C95 /* Storyboards */,
+				A82C88CF2B865B48009D9C95 /* Resources */,
 				A82C88A72B825309009D9C95 /* AppDelegate.swift */,
 				A82C88A92B825309009D9C95 /* SceneDelegate.swift */,
-				A82C88B02B82530A009D9C95 /* Assets.xcassets */,
 				A82C88B52B82530A009D9C95 /* Info.plist */,
 			);
 			path = DogBreedFinder;
@@ -95,6 +130,8 @@
 			isa = PBXGroup;
 			children = (
 				A82C88AB2B825309009D9C95 /* DogListViewController.swift */,
+				FC073F072B861FDE0054CD8F /* BreedDetailsViewController.swift */,
+				FC073F172B8634EF0054CD8F /* ImagePopupViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -103,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				A82C88C62B84DB2D009D9C95 /* BreedViewModel.swift */,
+				FC073F152B86260F0054CD8F /* BreedDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -110,7 +148,6 @@
 		A82C88C22B828E40009D9C95 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				A82C88C32B828E70009D9C95 /* NetworkManager.swift */,
 				A82C88C02B827BCC009D9C95 /* DogAPIManager.swift */,
 			);
 			path = Services;
@@ -133,6 +170,23 @@
 			path = Constant;
 			sourceTree = "<group>";
 		};
+		A82C88CF2B865B48009D9C95 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A82C88B02B82530A009D9C95 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FC073F092B8620F60054CD8F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FC073F0E2B86214C0054CD8F /* BreedDetailsCollectionViewCell.swift */,
+				FC073F0F2B86214C0054CD8F /* BreedDetailsCollectionViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A82C88B82B82530A009D9C95 /* Build configuration list for PBXNativeTarget "DogBreedFinder" */;
 			buildPhases = (
+				9B08CE7EE7CB086BB09167B0 /* [CP] Check Pods Manifest.lock */,
 				A82C88A02B825309009D9C95 /* Sources */,
 				A82C88A12B825309009D9C95 /* Frameworks */,
 				A82C88A22B825309009D9C95 /* Resources */,
+				AAD4D6332C8EA291E7EC5891 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -193,24 +249,70 @@
 			files = (
 				A82C88B42B82530A009D9C95 /* LaunchScreen.storyboard in Resources */,
 				A82C88B12B82530A009D9C95 /* Assets.xcassets in Resources */,
+				FC073F112B86214C0054CD8F /* BreedDetailsCollectionViewCell.xib in Resources */,
 				A82C88AF2B825309009D9C95 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9B08CE7EE7CB086BB09167B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DogBreedFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAD4D6332C8EA291E7EC5891 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DogBreedFinder/Pods-DogBreedFinder-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DogBreedFinder/Pods-DogBreedFinder-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DogBreedFinder/Pods-DogBreedFinder-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A82C88A02B825309009D9C95 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A82C88C42B828E70009D9C95 /* NetworkManager.swift in Sources */,
+				FC073F102B86214C0054CD8F /* BreedDetailsCollectionViewCell.swift in Sources */,
+				FC073F162B86260F0054CD8F /* BreedDetailsViewModel.swift in Sources */,
 				A82C88AC2B825309009D9C95 /* DogListViewController.swift in Sources */,
 				A82C88C72B84DB2D009D9C95 /* BreedViewModel.swift in Sources */,
 				A82C88CE2B858CB9009D9C95 /* BreedModel.swift in Sources */,
+				FC073F082B861FDE0054CD8F /* BreedDetailsViewController.swift in Sources */,
 				A82C88CA2B84E06A009D9C95 /* Constant.swift in Sources */,
 				A82C88C12B827BCC009D9C95 /* DogAPIManager.swift in Sources */,
 				A82C88BD2B82564C009D9C95 /* DogModel.swift in Sources */,
+				FC073F182B8634EF0054CD8F /* ImagePopupViewController.swift in Sources */,
 				A82C88A82B825309009D9C95 /* AppDelegate.swift in Sources */,
 				A82C88AA2B825309009D9C95 /* SceneDelegate.swift in Sources */,
 			);
@@ -275,7 +377,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -338,7 +440,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -359,6 +461,7 @@
 		};
 		A82C88B92B82530A009D9C95 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F8656E0489A0C58AEE080509 /* Pods-DogBreedFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -368,7 +471,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DogBreedFinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -388,6 +491,7 @@
 		};
 		A82C88BA2B82530A009D9C95 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 321A5C97509217BC758500CA /* Pods-DogBreedFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -397,7 +501,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DogBreedFinder/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

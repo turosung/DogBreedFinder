@@ -8,5 +8,5 @@
 import Foundation
 
 struct Breed: Decodable {
-    let img: String
+    let message: [String]
 }

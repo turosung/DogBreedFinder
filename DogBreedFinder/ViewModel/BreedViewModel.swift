@@ -13,7 +13,7 @@ protocol DogServices: AnyObject {
 
 class BreedViewModel {
     
-    private let dogManager = DogAPIManager()
+    private let apiManager = DogAPIManager()
     weak var dogDelegate: DogServices?
     
     var dogs: DogModel? {
@@ -25,8 +25,7 @@ class BreedViewModel {
     @MainActor func fetchDogs(url: String) {
         Task {
             do {
-                let dogResponse: DogModel = try await dogManager.getDogBreeds(url: dogAPIURL)
-                print(dogResponse)
+                let dogResponse: DogModel = try await apiManager.getDogBreeds(url: url)
                 self.dogs = dogResponse
             } catch {
                 print(error)

@@ -22,7 +22,7 @@ class DogListViewController: UIViewController, UITableViewDelegate, UITableViewD
         dogTableView.delegate = self
         
         viewModel.dogDelegate = self
-        viewModel.fetchDogs(url: dogAPIURL)
+        viewModel.fetchDogs(url: breedListURL)
     }
     
     
@@ -35,13 +35,21 @@ class DogListViewController: UIViewController, UITableViewDelegate, UITableViewD
         cell.textLabel?.text = viewModel.dogs?.message[indexPath.row]
         return cell
     }
-}
     
-extension DogListViewController: DogServices {
-    func reloadData() {
-        self.dogTableView.reloadData()
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc : BreedDetailsViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BreedDetailsViewController") as! BreedDetailsViewController
+        vc.breedString = viewModel.dogs?.message[indexPath.row] ?? ""
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
-    
+
+extension DogListViewController: DogServices {
+    func reloadData() {
+        DispatchQueue.main.async {
+            self.dogTableView.reloadData()
+        }
+    }
+}
+
 
 
