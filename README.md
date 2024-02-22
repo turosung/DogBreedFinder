@@ -34,7 +34,7 @@ Xcode, Swift, Cocoapods
 
 ### Installing
 
-1. Clone the repository: `git clone https://github.com/.......`
+1. Clone the repository: `https://github.com/turosung/DogBreedFinder.git`
 
 2. Open the project in Xcode: `cd DogBreedFinder` and then `open DogBreedFinder.xcworkspace`
 
